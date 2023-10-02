@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  application:
+    user: "${UID}:${GID}"
+    build:
+      target: dev
+    ports:
+      - '${APP_PORT}:3000'
+    volumes:
+      - "./:/app"

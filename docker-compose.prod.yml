@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  application:
+    build:
+      target: prod
+    ports:
+      - '${APP_PORT}:3000'
